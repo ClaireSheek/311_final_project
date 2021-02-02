@@ -1,12 +1,14 @@
 const express = require("express");
 const bodyParser = require("body-parser");
-const usersRouter = require('./routers/users');
+// const usersRouter = require('./routers/users');
+const customerRouter = require('./routers/customers')
 
 const app = express();
 const port = process.env.PORT || 4001;
 
 app.use(bodyParser.json())
-app.use('/users', usersRouter)
+// app.use('/users', usersRouter)
+app.use('/api', customerRouter)
 
 app.use(express.static('public'))
 

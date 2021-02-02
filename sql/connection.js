@@ -9,7 +9,7 @@ class Connection {
         host: 'den1.mysql3.gear.host',
         user: 'acafinal311',
         password: 'Dp3242W7_-W2',
-        database: 'customers'
+        database: 'acafinal311'
       })
 
       return this.pool
